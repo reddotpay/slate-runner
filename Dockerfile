@@ -9,8 +9,8 @@ RUN tar -xvf node-v8.11.3-linux-x64.tar.xz
 
 RUN export PATH=/node-v8.11.3-linux-x64/bin:$PATH
 
-RUN npm install -g widdershins
-RUN npm install -g mkdirp-promise
+RUN /node-v8.11.3-linux-x64/bin/npm install -g widdershins
+RUN /node-v8.11.3-linux-x64/bin/npm install -g mkdirp-promise
 
 RUN apt-get install -y python-pip libpython-dev
 RUN \
