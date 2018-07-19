@@ -9,6 +9,3 @@ RUN npm install -g mkdirp-promise
 
 RUN git clone https://github.com/reddotpay/slate.git
 RUN cd /slate && bundle install && cd /
-
-RUN mkdir -p /slate/build
-VOLUME /slate/build
